@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+}
+
+body{
+    display: flex;
+    background-image: url(skull.jpg);
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    text-align: center;
+    z-index: 100;
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 30px;
+    user-select: none;
+    top: 10px;
+}
+
+.nav a{
+    position: relative;
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    /* text-align: center; */
+    margin-left: 70px;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+    left: 0;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform .3s;
+    margin-right: 160px;
+}
+
+.nav a:hover::after{
+    transform-origin: left;
+    transform: scale(1);
+}
+
+.nav .nbtn {
+    width: 120px;
+    height: 40px;
+    background-color: #323232;
+    color: #ffffff;
+    text-decoration: none;
+    top: 40px;
+    margin-left: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    border-color: #ffffff;
+    border-style:solid;
+
+}
+
+.nav .nbtn:hover{
+    background-color: rgb(159, 13, 13);
+    color: rgb(255, 255, 255);
+}
+/* Existing styles above this point remain unchanged */
+
+.wrapper{
+    
+    margin-left: 200px;
+    width: 600px; /* Increased width */
+    max-width: 80%; /* Added max-width for responsiveness */
+    height: 400px; /* Allow the height to adjust based on content */
+    padding: 40px; /* Increased padding for better spacing */
+    border: 2px solid wheat;
+    border-radius: 20px; /* Increased border-radius for rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly opaque background */
+    backdrop-filter: blur(8px); /* Increased backdrop filter for a more pronounced blur */
+    position: relative; 
+    margin-top: 50px; /* Adjusted margin-top for spacing */
+}
+
+.formboxlogin .gin {
+    color: #ffffff;
+    user-select: none;
+    font-size: 40px; /* Increased font size */
+}
+.input-box {
+    margin-bottom: 30px; /* Adjusted margin-bottom for spacing */
+    font-size: 20px; /* Increased font size */
+    /* width: 300px; Full width */
+    margin-top: 20px;
+}
+
+.input-box input {
+    width: 300px; /* Full width for the input field */
+    height: 50px; /* Increased input field height */
+    padding: 10px; /* Added padding for spacing within the input field */
+    margin-bottom: 15px; /* Adjusted margin-bottom for spacing between inputs */
+}
+
+.input-box .mail {
+    font-size: 24px; /* Increased font size */
+    
+}
+
+.input-box2 input {
+    margin-left: 32px;
+    width: 300px; /* Full width for the input field */
+    height: 50px; /* Increased input field height */
+    padding: 10px; /* Added padding for spacing within the input field */
+    margin-bottom: 15px; /* Adjusted margin-bottom for spacing between inputs */
+}
+
+.input-box2 .pass {
+    font-size: 24px; /* Increased font size */
+    /* You can also adjust other styles for the password input if needed */
+}
+
+/* Additional styling for better spacing and readability (optional) */
+.forgot {
+    font-size: 16px; 
+    color: #ffffff;
+    margin-top: 10px; 
+}
+
+.btn {
+    width: 100%; /* Full width button */
+    height: 50px; /* Increased button height */
+    font-size: 24px; /* Increased font size */
+    margin-top: 20px; /* Adjusted margin-top for spacing */
+}
